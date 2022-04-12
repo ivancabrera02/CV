@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Currículum Iván</title>
+</head>
+<body>
+    <header>
+        <h1>Iván Cabrera Fresno</h1>
+        <h3>Systems and Networks Technician, Cybersecurity Consultant</h3>
+    </header>
+    <div id="contacto">
+        <p id="titulo5">CONTACT</p>
+        <br><br>
+        <ul id="lista">
+            <li>itipscabrera@gmail.com</li>
+            <li>+34684237279</li>
+            <li>Seville</li>
+        </ul>
+
+    </div>
+    <nav>
+        <a href="curriculum.html"><img src="españa.png" width="25" height="25"></a>
+    </nav>
+    <div id="foto"><img src="descarga.png" height="180" width="180"></div>
+    <div id="logo">
+        <a href="https://www.linkedin.com/in/iv%C3%A1n-cabrera-fresno-124573210/"><img src="logo2.png" width="20" height="20"></a>
+    </div>
+    <article id="text">
+        <p>
+            My name is Iván and I am passionate about learning. My passion is cybersecurity, although I also like development a lot.
+             I recently graduated and now I dedicate myself to overcoming courses and challenges in my professional field. 
+        </p>
+    </article>
+    <br>
+    <p id="exp">TITLES AND EXPERIENCE</p>
+    <div id="columna">
+       <div id="columna1">
+           <p id="titulo1">Degree in Systems and Networks</p>
+           <p id="texto1">In this Degree I acquired skills on 'networks', 'programming in html, css, js and php', 'manage servers in
+            windows server and ubuntu server', 'computer security' among others.</p>
+            <br>
+            <p id="titulo3">Development Certifications</p>
+            <ul id="texto3">
+                <li>HTML5 y CSS3</li>
+                <li>Advanced Javascript</li>
+                <li>PHP</li>
+                <li>Bash Scripting</li>
+                <li>Linux</li>
+                <li>GIT</li>
+                <li>MySQL</li>
+                <li>Python</li>
+            </ul>
+       </div>
+       <div id="columna2">
+           <p id="titulo2">Cybersecurity Certifications</p>
+           <ul id="texto2">
+               <li>Hacking tools: Blue Team</li>
+               <li>Hacking tools: Red Team</li>
+               <li>How to build secure Wi-Fi networks</li>
+               <li>Cybersecurity in telecommuting</li>
+               <li>Computer Security Course</li>
+               <li>Computer Triage</li>
+               <li>Web Pentesting Course</li>
+               <li>OSINT Course</li>
+               <li>Metasploit Course</li>
+               <li>Hacking course with search engines</li>
+           </ul>
+           <br>
+           <p id="titulo4">Work experience</p>
+           <p id="texto4">Custom web page design</p>
+       </div>
+    </div>
+    <p id="skills">SKILLS</p><br>
+    <article id="skills1">
+        <button id="idioma" onclick="change(titulo)"></button>
+        <button id="aptitudes" onclick="change1(titulo1)"></button> 
+        <button id="otras" onclick="change2(titulo2)"></button>
+    </article>
+    <script>
+        const titulo = document.getElementById("idioma");
+        titulo.innerHTML = "LANGUAGES";
+
+        const titulo1 = document.getElementById("aptitudes");
+        titulo1.innerHTML = "APTITUDES";
+
+        const titulo2 = document.getElementById("otras");
+        titulo2.innerHTML = "OTHERS";
+
+        function change(titulo){
+            titulo.innerHTML = "High english, basic french.";
+        }
+
+        function change1(titulo1){
+            titulo1.innerHTML = "Good presence, Leadership, Communication, Teamwork and Office automation (Word, Excel, Access, PowerPoint).";
+        }
+
+        function change2(titulo2){
+            titulo2.innerHTML = "Driving license B, knowledge about blockchain.";
+        }
+       
+    </script>
+
+</body>
+</html>
